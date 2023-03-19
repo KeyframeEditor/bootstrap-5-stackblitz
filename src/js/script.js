@@ -56,7 +56,7 @@ function showGempaCard(data) {
         <tbody>
           <tr>
             <td>Magnitude</td>
-            <td>${data.Magnitude}</td>
+            <td>${data.Magnitude} SR</td>
           </tr>
           <tr>
             <td>Koordinat</td>
