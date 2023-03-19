@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="js/api.js">fetchGempa()</script>
 </head>
 <body>
   <div class="container-scroller">
@@ -249,73 +250,6 @@
               <span class="menu-title">Berita Gempa</span>
             </a>
           </li>
-          <li class="nav-item nav-category">Template Tools</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="menu-icon mdi mdi-card-text-outline"></i>
-              <span class="menu-title">Form elements</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Charts</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">Icons</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-account-circle-outline"></i>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
         </ul>
       </nav>
       <!-- partial -->
@@ -331,8 +265,8 @@
                         <div class="statistics-details d-flex align-items-left">
                           <div >
                             <p class="statistics-title">Kejadian Gempa</p>
-                            <h3 class="rate-percentage">58</h3>
-                            <p class="text-success d-flex"><i class="mdi "></i><span> dalam 30 hari</span></p>
+                            <h3 class="rate-percentage">8</h3>
+                            <p class="text-success d-flex"><i class="mdi "></i><span> dalam 7 hari</span></p>
                           </div>
                           <div class="ms-5">
                             <p class="statistics-title">Berita Gempa Terbaru</p>
@@ -350,8 +284,24 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Gempa Terdeteksi</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    <h4 class="card-title card-title-dash">224 km BaratLaut MELONGUANE-SULUT</h4> 
+                                   <p class="card-subtitle card-subtitle-dash">18 Mar 2023</p>
+                                   <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Jam</td>
+                                        <td>02:38:00 WIB</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Potensi</td>
+                                        <td>Tidak berpotensi tsunami</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Koordinat</td>
+                                        <td>5.90,125.99</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                   </div>
                               </div>
                             </div>
@@ -368,8 +318,58 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Berita Gempa</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    <h4 class="card-title card-title-dash">224 km BaratLaut MELONGUANE-SULUT</h4> 
+                                   <p class="card-subtitle card-subtitle-dash">18 Mar 2023</p>
+                                   <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Jam</td>
+                                        <td>02:38:00 WIB</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Potensi</td>
+                                        <td>Tidak berpotensi tsunami</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Koordinat</td>
+                                        <td>5.90,125.99</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="row">
+                      <div class="col-lg-8 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                    <h4 class="card-title card-title-dash">224 km BaratLaut MELONGUANE-SULUT</h4> 
+                                   <p class="card-subtitle card-subtitle-dash">18 Mar 2023</p>
+                                   <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Jam</td>
+                                        <td>02:38:00 WIB</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Potensi</td>
+                                        <td>Tidak berpotensi tsunami</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Koordinat</td>
+                                        <td>5.90,125.99</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                   </div>
                               </div>
                             </div>
