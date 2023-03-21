@@ -42,7 +42,7 @@ async function app() {
 
 
   const wilayah = getWilayah(gempa.Wilayah);
-  const berita = await fetchBerita(wilayah);
+  const berita = await fetchBerita(wilayah + " " + gempa.Magnitude);
   showBeritaCard(berita);
 }
 
